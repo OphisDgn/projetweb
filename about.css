@@ -1,5 +1,4 @@
 /* header */
-
 .header {
   background-color: darkgray;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -116,11 +115,21 @@
 /* fin header et menu */ 
 /* general */
 body {
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-	height: 100%;
-	width: 100%;
+    margin: 0;
+	font-family: Helvetica, sans-serif;
+    background-image: url(image/thor.jpg);
 }
 
+hr {
+    background-color: white;
+    width: 400px;
+}
+@media (min-width: 48em) {
+    hr {
+        background-color: white;
+        width: 1000px;
+    }
+}
 a {
     transition: all .5s;
 }
@@ -154,19 +163,48 @@ h2 {
     border: none;
     float: right;
     margin-left: 25px;
-    margin-top: 
+    margin-top: 20px;
+    text-align: center;
+}
+#projet {
+    width: 20%;
+    float: left;
+    margin: 5%;
+    opacity: 0.8;
+    transition: 200ms;
+    width: 100px;
+    height: 100px;
+}
+#projet:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 10px black;
+    transform: scale(1.1);
+}
+#paragraphe {
+    text-align: center;
+    padding-top: 30px;
+}
+@media (min-width: 48em) {
+    #projet {
+        width: 15%;
+        float: left;
+        margin: 5%;
+        opacity: 0.8;
+        transition: 200ms;
+        width: 200px;
+        height: 200px;
+    }
 }
 /* fin section B */
 
 /* bouton de competences */
+.btn-competence {
+    color: white;
+    text-align: center;
+}
 .btn {
     border: 2px solid black;
-}
-.bg-primary {
-    background: radial-gradient(#585858, #000000);
-    height: 500px;
     text-align: center;
-    color: white;
 }
 .btn-primary {
     color: #000;
@@ -183,27 +221,71 @@ h2 {
 /* fin bouton de competences */
 
 /* partie footer */
+#socialmedia {
+    padding-top: 3px;
+}
+#coordonnes {
+    padding-top: 52px;
+}
+#logofooter {
+    margin-top: 2px;
+    padding-top: 2px;
+    height: 80px;
+    width: 70px;
+}
 #footer {
     background: radial-gradient(#D1D0D0, #7A7A7A);
-    height: 200px;
+    height: 250px;
     text-align: center;
 }
-#footer h3 {
+#footer h4 {
     color: black;
-    padding-top: 20px;
+    padding-top: 1px;
+    font-family: sans-serif;
 }
-#linkedin, #twitter, #facebook, #instagram {
-    height: 50px;
-    width: 50px;
+#link-link, #link-insta, #link-face, #link-git {
+    padding-top: 2px;
+    padding-bottom: 5px;
 }
-
-#footer #linkedin, #twitter, #facebook, #instagram {
+#linkedin, #twitter, #facebook, #instagram, #github {
+    height: 20px;
+    width: 20px;
+}
+#footer #linkedin, #twitter, #facebook, #instagram, #github {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-#footer #linkedin:hover, #twitter:hover, #facebook:hover, #instagram:hover {
+#footer #linkedin:hover, #twitter:hover, #facebook:hover, #instagram:hover, #github:hover {
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
+}
+
+@media (min-width: 48em) {
+    #footer {
+        background: radial-gradient(#D1D0D0, #7A7A7A);
+        height: 130px;
+        text-align: center;
+    }
+    #footlogo {
+        margin-top: 20px;
+        padding-top: 2px;
+        height: 100px;
+        width: 90px;
+    }
+    #socialmedia {
+        float: left;
+        padding-left: 80px;
+        padding-top: 20px;
+    }
+    #coordonnes {
+        float: right;
+        padding-right: 80px;
+        padding-top: 20px;
+    }
+    #linkedin, #twitter, #facebook, #instagram, #github {
+        height: 50px;
+        width: 50px;
+    }
 }

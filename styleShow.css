@@ -167,19 +167,15 @@ hr {
     width: 100px;
     height: 100px;
 }
-#paragraphe {
-    text-align: center;
-    padding-top: 30px;
-}
-
-/* fin section B */
-
 #projet:hover {
     opacity: 1;
     box-shadow: 0px 0px 10px black;
     transform: scale(1.1);
 }
-
+#paragraphe {
+    text-align: center;
+    padding-top: 30px;
+}
 @media (min-width: 48em) {
     #projet {
         width: 15%;
@@ -191,27 +187,34 @@ hr {
         height: 200px;
     }
 }
+/* fin section B */
 
 /* partie footer */
 #socialmedia {
-    float: left;
+    padding-top: 3px;
 }
 #coordonnes {
-    float: right;
+    padding-top: 52px;
 }
 #logofooter {
-    padding-top: 20px;
-    height: 60px;
-    width: 60px;
+    margin-top: 2px;
+    padding-top: 2px;
+    height: 80px;
+    width: 70px;
 }
 #footer {
     background: radial-gradient(#D1D0D0, #7A7A7A);
-    height: 200px;
+    height: 250px;
     text-align: center;
 }
-#footer h2 {
+#footer h4 {
     color: black;
-    padding-top: 20px;    
+    padding-top: 1px;
+    font-family: sans-serif;
+}
+#link-link, #link-insta, #link-face, #link-git {
+    padding-top: 2px;
+    padding-bottom: 5px;
 }
 #linkedin, #twitter, #facebook, #instagram, #github {
     height: 20px;
@@ -229,19 +232,26 @@ hr {
 }
 
 @media (min-width: 48em) {
-    #footer #logofooter {
-        height: 150px;
-        width: 150px;
+    #footer {
+        background: radial-gradient(#D1D0D0, #7A7A7A);
+        height: 130px;
+        text-align: center;
     }
-    #footer #socialmedia {
+    #footlogo {
+        margin-top: 20px;
+        padding-top: 2px;
+        height: 100px;
+        width: 90px;
+    }
+    #socialmedia {
         float: left;
         padding-left: 80px;
-        height: 30px;
+        padding-top: 20px;
     }
-    #footer #coordonnes {
+    #coordonnes {
         float: right;
         padding-right: 80px;
-        height: 30px;
+        padding-top: 20px;
     }
     #linkedin, #twitter, #facebook, #instagram, #github {
         height: 50px;
