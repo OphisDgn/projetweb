@@ -1,13 +1,3 @@
-.logo {
-    color:black;
-}
-
-body {
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-	height: 100%;
-	width: 100%;
-	/*background-color: #9AC0CD;*/
-}
 /* header */
 
 .header {
@@ -125,6 +115,12 @@ body {
 
 /* fin header et menu */ 
 
+body {
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	height: 100%;
+	width: 100%;
+	/*background-color: #9AC0CD;*/
+}
 
 a {
     transition: all .5s;
@@ -136,16 +132,51 @@ a:focus {
 h2 {
 	color: #FFF;
 }
+.btn {
+    border: 2px solid black;
+}
+.bg-primary {
+    background: radial-gradient(#585858, #000000);
+    height: 500px;
+    text-align: center;
+    color: white;
+}
 .btn-primary {
     color: #000;
-	background-color: beige;
-    /*background-color: rgba(240, 95, 64, 1.0);*/
-    border-color: black;
+	background: radial-gradient(#A8BAB8, #A8BAB8);
+    border: 1px solid black;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
 }
-.bg-primary {
-	text-align: center;
-	color: #FFF;
+.figure img {
+    height: 200px;
+    width: 200px;
+}
+
+
+/* partie footer */
+#footer {
+    background: radial-gradient(#D1D0D0, #7A7A7A);
+    height: 200px;
+    text-align: center;
+}
+#footer h3 {
+    color: black;
+    padding-top: 20px;
+}
+#linkedin, #twitter, #facebook, #instagram {
+    height: 50px;
+    width: 50px;
+}
+
+#footer #linkedin, #twitter, #facebook, #instagram {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#footer #linkedin:hover, #twitter:hover, #facebook:hover, #instagram:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }

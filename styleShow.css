@@ -9,9 +9,15 @@ body {
 }
 
 hr {
-    color: white;
+    background-color: white;
+    width: 400px;
 }
-
+@media (min-width: 48em) {
+    hr {
+        background-color: white;
+        width: 1000px;
+    }
+}
 /* header */
 
 .header {
@@ -143,26 +149,27 @@ hr {
 /* fin section A */
 
 /* section B */
-li {
+#liste {
     padding-right: 45px;
     padding-bottom: 20px;
 }
 .card-text {
     border: none;
     float: right;
-    margin-left: 40px;
+    margin-left: 25px;
+    margin-top: 
 }
 
 /* fin section B */
 
-img {
-    width: 30%;
+#projet {
+    width: 20%;
     float: left;
     margin: 5%;
     opacity: 0.8;
     transition: 200ms;
-    width: 250px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
 img:hover {
@@ -172,12 +179,14 @@ img:hover {
 }
 
 @media (min-width: 48em) {
-    img {
+    #projet {
         width: 15%;
         float: left;
         margin: 5%;
         opacity: 0.8;
         transition: 200ms;
+        width: 200px;
+        height: 200px;
         
     }
 }

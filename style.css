@@ -131,10 +131,6 @@ a:focus {
 h2 {
 	color: #FFF;
 }
-img {
-	border-radius: 4px;
-    height: 500px;
-}
 hr {
     background-color: white;
     width: 450px;
@@ -157,24 +153,12 @@ hr {
     text-align: center;
     color: white;
 }
-
-.btn {
-    border: none;
-    border-radius: 300px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.btn-xl {
-    padding: 15px 30px;
-    text-align: center;
-}
 .intro h1 {
 	margin: 175px 0 40px;
 	font-weight: 600;
 }
-    
-/* partie a propos */ 
 
+/* partie a propos */ 
 .bg-primary {
     background: radial-gradient(#585858, #000000);
     height: 500px;
@@ -183,13 +167,23 @@ hr {
 }
 .btn-primary {
     color: #000;
-	background-image: url(image/belier.png);
+	background: radial-gradient(#A8BAB8, #A8BAB8);
     border-color: black;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
 }
-.figure img {
+.btn {
+    border: black;
+    border-radius: 300px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.btn-xl {
+    padding: 15px 30px;
+    text-align: center;
+}
+#image {
     height: 200px;
     width: 200px;
 }
