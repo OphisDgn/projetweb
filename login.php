@@ -1,6 +1,5 @@
 <html>
     <head>
-        <title>Site personnel - Connexion </title>
        <meta charset="utf-8">
         <!-- importer le fichier de style -->
         <link rel="stylesheet" href="adminstyle.css" media="screen" type="text/css" />

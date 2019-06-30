@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <!-- importer le fichier de style -->
-        <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+        <link rel="stylesheet" href="adminstyle.css" media="screen" type="text/css" />
     </head>
     <body style='background:#fff;'>
         <div id="content">
@@ -15,7 +15,6 @@
                     echo "Bonjour $user, vous êtes connecté";
                 }
             ?>
-            
         </div>
     </body>
 </html>
