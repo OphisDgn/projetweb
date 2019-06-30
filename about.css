@@ -114,12 +114,11 @@
 }
 
 /* fin header et menu */ 
-
+/* general */
 body {
 	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 	height: 100%;
 	width: 100%;
-	/*background-color: #9AC0CD;*/
 }
 
 a {
@@ -132,6 +131,34 @@ a:focus {
 h2 {
 	color: #FFF;
 }
+
+/* section A  */
+#section-a {
+    background-image: url(image/thor.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    height: 450px;
+}
+.content-wrap {
+    padding-top: 200px;
+    text-align: center;
+}
+/* fin section A */
+
+/* section B */
+#liste {
+    padding-right: 45px;
+    padding-bottom: 20px;
+}
+.card-text {
+    border: none;
+    float: right;
+    margin-left: 25px;
+    margin-top: 
+}
+/* fin section B */
+
+/* bouton de competences */
 .btn {
     border: 2px solid black;
 }
@@ -153,7 +180,7 @@ h2 {
     height: 200px;
     width: 200px;
 }
-
+/* fin bouton de competences */
 
 /* partie footer */
 #footer {

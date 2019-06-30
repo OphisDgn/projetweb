@@ -1,25 +1,4 @@
-body {
-  margin: 0;
-  font-family: Helvetica, sans-serif;
-  background-image: url(image/thor.jpg);
-}
-
-.logo {
-  color: black;
-}
-
-hr {
-    background-color: white;
-    width: 400px;
-}
-@media (min-width: 48em) {
-    hr {
-        background-color: white;
-        width: 1000px;
-    }
-}
 /* header */
-
 .header {
   background-color: darkgray;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -132,7 +111,27 @@ hr {
     display: none;
   }
 }
+/* général */
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-image: url(image/thor.jpg);
+}
 
+.logo {
+  color: black;
+}
+
+hr {
+    background-color: white;
+    width: 400px;
+}
+@media (min-width: 48em) {
+    hr {
+        background-color: white;
+        width: 1000px;
+    }
+}
 
 /* section A  */
 #section-a {
@@ -145,7 +144,6 @@ hr {
     padding-top: 200px;
     text-align: center;
 }
-
 /* fin section A */
 
 /* section B */
@@ -157,11 +155,9 @@ hr {
     border: none;
     float: right;
     margin-left: 25px;
-    margin-top: 
+    margin-top: 20px;
+    text-align: center;
 }
-
-/* fin section B */
-
 #projet {
     width: 20%;
     float: left;
@@ -171,8 +167,14 @@ hr {
     width: 100px;
     height: 100px;
 }
+#paragraphe {
+    text-align: center;
+    padding-top: 30px;
+}
 
-img:hover {
+/* fin section B */
+
+#projet:hover {
     opacity: 1;
     box-shadow: 0px 0px 10px black;
     transform: scale(1.1);
@@ -187,6 +189,62 @@ img:hover {
         transition: 200ms;
         width: 200px;
         height: 200px;
-        
+    }
+}
+
+/* partie footer */
+#socialmedia {
+    float: left;
+}
+#coordonnes {
+    float: right;
+}
+#logofooter {
+    padding-top: 20px;
+    height: 60px;
+    width: 60px;
+}
+#footer {
+    background: radial-gradient(#D1D0D0, #7A7A7A);
+    height: 200px;
+    text-align: center;
+}
+#footer h2 {
+    color: black;
+    padding-top: 20px;    
+}
+#linkedin, #twitter, #facebook, #instagram, #github {
+    height: 20px;
+    width: 20px;
+}
+#footer #linkedin, #twitter, #facebook, #instagram, #github {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#footer #linkedin:hover, #twitter:hover, #facebook:hover, #instagram:hover, #github:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+@media (min-width: 48em) {
+    #footer #logofooter {
+        height: 150px;
+        width: 150px;
+    }
+    #footer #socialmedia {
+        float: left;
+        padding-left: 80px;
+        height: 30px;
+    }
+    #footer #coordonnes {
+        float: right;
+        padding-right: 80px;
+        height: 30px;
+    }
+    #linkedin, #twitter, #facebook, #instagram, #github {
+        height: 50px;
+        width: 50px;
     }
 }
