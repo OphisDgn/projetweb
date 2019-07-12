@@ -112,7 +112,45 @@
   }
 }
 /* fin header et menu */ 
-
+/* general */
+body {
+    margin: 0;
+	font-family: Helvetica, sans-serif;
+    background-image: url(image/thor.jpg);
+}
+hr {
+    background-color: white;
+    width: 400px;
+}
+@media screen and (min-width: 48em) {
+    hr {
+        background-color: white;
+        width: 1000px;
+    }
+}
+a {
+    transition: all .5s;
+}
+a:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+h2 {
+	color: #FFF;
+}
+/* fin general */
+/* section A  */
+#section-a {
+    background-image: url(image/thor.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    height: 450px;
+}
+.content-wrap {
+    padding-top: 200px;
+    text-align: center;
+}
+/* fin section A */
 
 
 
