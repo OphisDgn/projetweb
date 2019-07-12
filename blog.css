@@ -51,7 +51,7 @@
 .header .menu-icon .navicon {
   background: #333;
   display: block;
-  height: 3px;
+  height: 2px;
   position: relative;
   transition: background .2s ease-out;
   width: 18px;
@@ -111,81 +111,11 @@
     display: none;
   }
 }
+/* fin header et menu */ 
 
-/* fin header */
 
 
-body {
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-	height: 100%;
-	width: 100%;
-}
-a {
-    transition: all .5s;
-}
-a:focus {
-  outline: 0 !important;
-  outline-offset: 0;
-}
-h2 {
-	color: #FFF;
-}
-hr {
-    background-color: white;
-    width: 450px;
-}
-@media screen and (min-width: 48em) {
-    hr {
-        background-color: white;
-        width: 1000px;
-    }
-}
-/* partie intro */    
 
-.container-intro {
-    /*min-height: 800px;*/
-    background-image: url('image/portfolioBG.jpg');
-	background-size: cover;
-    background-position: center;
-    height: 800px;
-    padding-top: 200px;
-    text-align: center;
-    color: white;
-}
-.intro h1 {
-	margin: 175px 0 40px;
-	font-weight: 600;
-}
-
-/* partie a propos */ 
-.bg-primary {
-    background: radial-gradient(#585858, #000000);
-    height: 500px;
-    text-align: center;
-    color: white;
-}
-.btn-primary {
-    color: #000;
-	background: radial-gradient(#A8BAB8, #A8BAB8);
-    border-color: black;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-}
-.btn {
-    border: black;
-    border-radius: 300px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.btn-xl {
-    padding: 15px 30px;
-    text-align: center;
-}
-#image {
-    height: 200px;
-    width: 200px;
-}
 
 /* partie footer */
 #socialmedia {

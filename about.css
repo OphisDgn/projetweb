@@ -95,7 +95,7 @@
 }
 
 /* 48em = 768px */
-@media (min-width: 48em) {
+@media screen and (min-width: 48em) {
   .header li {
     float: left;
   }
@@ -184,7 +184,7 @@ h2 {
     text-align: center;
     padding-top: 30px;
 }
-@media (min-width: 48em) {
+@media screen and (min-width: 48em) {
     #projet {
         width: 15%;
         float: left;
@@ -265,7 +265,7 @@ h2 {
 	transform: scale(1.3);
 }
 
-@media (min-width: 48em) {
+@media screen and (min-width: 48em) {
     #footer {
         background: radial-gradient(#D1D0D0, #7A7A7A);
         height: 130px;

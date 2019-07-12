@@ -95,7 +95,7 @@
 }
 
 /* 48em = 768px */
-@media (min-width: 48em) {
+@media screen and (min-width: 48em) {
   .header li {
     float: left;
   }
@@ -127,7 +127,7 @@ hr {
     background-color: white;
     width: 400px;
 }
-@media (min-width: 48em) {
+@media screen and (min-width: 48em) {
     hr {
         background-color: white;
         width: 1000px;
@@ -214,7 +214,7 @@ hr {
 	transform: scale(1.3);
 }
 
-@media (min-width: 48em) {
+@media screen and (min-width: 48em) {
     #footer {
         background: radial-gradient(#D1D0D0, #7A7A7A);
         height: 130px;
