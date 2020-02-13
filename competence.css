@@ -1,8 +1,7 @@
 /* header */
-
 .header {
-  background-color: darkgray;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  background-color: white;
+  box-shadow: 0px 2px 12px #d6d6d6;
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -17,12 +16,14 @@
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
+  border-right: 1px solid #e0e0e0;
   text-decoration: none;
+  transition: all .8s ease-out;
 }
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: #e0e0e0;
+  transition: all .8s ease-out;
 }
 .header .logo {
   display: block;
@@ -34,10 +35,10 @@
 
 /* menu */
 .header .menu {
-  background-color: darkgray;
+  background-color: white;
   clear: both;
   max-height: 0;
-  transition: max-height .2s ease-out;
+  transition: all .8s ease-out;
 }
 
 /* menu icon */
@@ -54,7 +55,7 @@
   display: block;
   height: 2px;
   position: relative;
-  transition: background .2s ease-out;
+  transition: background .3s ease-out;
   width: 18px;
 }
 .header .menu-icon .navicon:before,
@@ -79,7 +80,7 @@
   display: none;
 }
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 257px;
 }
 .header .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
@@ -112,8 +113,7 @@
     display: none;
   }
 }
-
-/* fin header */
+/* fin header */ 
 
 
 /* partie footer */
@@ -124,7 +124,7 @@
     padding-top: 52px;
 }
 #logofooter {
-    margin-top: 2px;
+    margin-top: 20px;
     padding-top: 2px;
     height: 80px;
     width: 70px;

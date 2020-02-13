@@ -118,31 +118,34 @@
 /* general */
 body {
     margin: 0;
-    font-family: Helvetica, sans-serif;
-    background-image: white;
+	font-family: Helvetica, sans-serif;
+    background-image: url(image/thor.jpg);
 }
-
-.logo {
-    color: black;
-}
-
 hr {
-    background-color: black;
+    background-color: white;
     width: 400px;
 }
 @media screen and (min-width: 48em) {
     hr {
-        background-color: black;
+        background-color: white;
         width: 1000px;
     }
 }
+a {
+    transition: all .5s;
+}
+a:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+h2 {
+	color: #FFF;
+}
 /* fin general */
-
 /* section A  */
 #section-a {
-    /*background-image: url(image/marbre.jpg);*/
     background-repeat: no-repeat;
-    color: black;
+    color: white;
     height: 450px;
 }
 .content-wrap {
@@ -150,48 +153,10 @@ hr {
     text-align: center;
 }
 /* fin section A */
+/* section B  */
 
-/* section conta = formulaire */
-#conta {
-    background-color: #e0c8ad;
-    text-align: center;
-    margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 20px;
-}
-#form {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
-}
-#name, #email {
-    border-radius: 5px;
-    border: none;
-    border-bottom: 1px solid #F9E4CC;
-    padding-left: 5px;
-    min-width: 300px;
-}
-#message {
-    min-height: 100px;
-    max-height: 250px;
-    min-width: 400px;
-    max-width: 600px;
-    padding-left: 5px;
-    border-radius: 5px;
-    border: none;
-    border: outset 1px #;
-}
-#how {
-    text-align: left;
-}
 
-@media screen and (min-width: 48em) {
-    #how {
-        text-align: left;
-    }
-}
-/* fin partie formulaire */
-
+/* fin section B */
 /* partie footer */
 #socialmedia {
     padding-top: 3px;
@@ -200,7 +165,7 @@ hr {
     padding-top: 52px;
 }
 #logofooter {
-    margin-top: 20px;
+    margin-top: 2px;
     padding-top: 2px;
     height: 80px;
     width: 70px;

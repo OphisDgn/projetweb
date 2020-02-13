@@ -1,7 +1,7 @@
 /* header */
 .header {
-  background-color: darkgray;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  background-color: white;
+  box-shadow: 0px 2px 12px #d6d6d6;
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -16,12 +16,14 @@
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
+  border-right: 1px solid #e0e0e0;
   text-decoration: none;
+  transition: all .8s ease-out;
 }
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: #e0e0e0;
+  transition: all .8s ease-out;
 }
 .header .logo {
   display: block;
@@ -33,10 +35,10 @@
 
 /* menu */
 .header .menu {
-  background-color: darkgray;
+  background-color: white;
   clear: both;
   max-height: 0;
-  transition: max-height .2s ease-out;
+  transition: all .8s ease-out;
 }
 
 /* menu icon */
@@ -53,7 +55,7 @@
   display: block;
   height: 2px;
   position: relative;
-  transition: background .2s ease-out;
+  transition: background .3s ease-out;
   width: 18px;
 }
 .header .menu-icon .navicon:before,
@@ -78,7 +80,7 @@
   display: none;
 }
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 257px;
 }
 .header .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
@@ -117,15 +119,15 @@
 body {
     margin: 0;
 	font-family: Helvetica, sans-serif;
-    background-image: url(image/thor.jpg);
+    background: white;
 }
 hr {
-    background-color: white;
+    background-color: black;
     width: 400px;
 }
 @media screen and (min-width: 48em) {
     hr {
-        background-color: white;
+        background-color: grey;
         width: 1000px;
     }
 }
@@ -142,9 +144,8 @@ h2 {
 /* fin general */
 /* section A  */
 #section-a {
-    background-image: url(image/thor.jpg);
-    background-repeat: no-repeat;
-    color: white;
+    background: white;
+    color: black;
     height: 450px;
 }
 .content-wrap {
@@ -156,16 +157,18 @@ h2 {
 /* section B */
 #liste {
     padding-right: 45px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 .card-text {
     border: none;
     float: right;
     margin-left: 25px;
     margin-top: 20px;
-    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
 }
-#projet {
+.vignette {
     width: 20%;
     float: left;
     margin: 5%;
@@ -174,24 +177,32 @@ h2 {
     width: 100px;
     height: 100px;
 }
-#projet:hover {
-    opacity: 1;
-    box-shadow: 0px 0px 10px black;
-    transform: scale(1.1);
-}
-#paragraphe {
+
+.paragraphe {
     text-align: center;
     padding-top: 30px;
 }
+
 @media screen and (min-width: 48em) {
-    #projet {
+    .vignette {
         width: 15%;
         float: left;
         margin: 5%;
-        opacity: 0.8;
-        transition: 200ms;
         width: 200px;
         height: 200px;
+    }
+    .projet:hover {
+        opacity: 1;
+        box-shadow: 0px 0px 10px black;
+        transform: scale(1.1);
+        transition: all .5s ease-out;
+    }
+    .card-text {
+        margin-right: 25px;
+        margin-left: 20px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        text-align: justify;
     }
 }
 /* fin section B */
@@ -202,25 +213,26 @@ h2 {
     margin-bottom: 30px;
 }
 .btn-competence {
-    color: white;
+    color: black;
     text-align: center;
 }
-.btn {
-    border: 2px solid black;
-}
-.btn-primary {
+.btn-xl {
     color: #000;
-	background: radial-gradient(#A8BAB8, #A8BAB8);
-    border: 1px solid black;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+	background: #e0c8ad;
+    border: 1px solid white;
+    transition: all .3s ease-out;
+}
+.btn-xl:hover {
+    transition: all .3s ease-out;
+    box-shadow: 0px 1px 12px #D0BAA1;
 }
 .figure img {
     height: 200px;
     width: 200px;
 }
 /* fin bouton de competences */
+
+
 
 /* partie footer */
 #socialmedia {
@@ -236,7 +248,7 @@ h2 {
     width: 70px;
 }
 #footer {
-    background: radial-gradient(#D1D0D0, #7A7A7A);
+    background: #e0e0e0;
     height: 250px;
     text-align: center;
 }
@@ -266,7 +278,7 @@ h2 {
 
 @media screen and (min-width: 48em) {
     #footer {
-        background: radial-gradient(#D1D0D0, #7A7A7A);
+        background: #e0e0e0;
         height: 130px;
         text-align: center;
     }

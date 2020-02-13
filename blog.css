@@ -1,7 +1,7 @@
 /* header */
 .header {
-  background-color: darkgray;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  background-color: white;
+  box-shadow: 0px 2px 12px #d6d6d6;
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -16,12 +16,14 @@
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
+  border-right: 1px solid #e0e0e0;
   text-decoration: none;
+  transition: all .8s ease-out;
 }
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: #e0e0e0;
+  transition: all .8s ease-out;
 }
 .header .logo {
   display: block;
@@ -33,10 +35,10 @@
 
 /* menu */
 .header .menu {
-  background-color: darkgray;
+  background-color: white;
   clear: both;
   max-height: 0;
-  transition: max-height .2s ease-out;
+  transition: all .8s ease-out;
 }
 
 /* menu icon */
@@ -53,7 +55,7 @@
   display: block;
   height: 2px;
   position: relative;
-  transition: background .2s ease-out;
+  transition: background .3s ease-out;
   width: 18px;
 }
 .header .menu-icon .navicon:before,
@@ -78,7 +80,7 @@
   display: none;
 }
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 257px;
 }
 .header .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
@@ -111,7 +113,8 @@
     display: none;
   }
 }
-/* fin header et menu */ 
+/* fin header */ 
+
 /* general */
 body {
     margin: 0;
@@ -141,9 +144,8 @@ h2 {
 /* fin general */
 /* section A  */
 #section-a {
-    background-image: url(image/thor.jpg);
-    background-repeat: no-repeat;
-    color: white;
+    background: white;
+    color: black;
     height: 450px;
 }
 .content-wrap {
@@ -163,7 +165,7 @@ h2 {
     padding-top: 52px;
 }
 #logofooter {
-    margin-top: 2px;
+    margin-top: 20px;
     padding-top: 2px;
     height: 80px;
     width: 70px;
@@ -172,6 +174,7 @@ h2 {
     background: radial-gradient(#D1D0D0, #7A7A7A);
     height: 250px;
     text-align: center;
+    bottom: 0;
 }
 #footer h4 {
     color: black;

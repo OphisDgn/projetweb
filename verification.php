@@ -4,7 +4,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
 {
     // connexion à la base de données
     $db_username = 'id10066043_celine';
-    $db_password = 'oliveur13';
+    $db_password = 'Oliveur13';
     $db_name     = 'id10066043_portfolio';
     $db_host     = 'localhost';
     $db = mysqli_connect($db_host, $db_username, $db_password,$db_name)
