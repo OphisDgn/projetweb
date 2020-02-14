@@ -185,7 +185,6 @@ body {
     font-size: 2.2em;
     color: #e0c8ad;
 }
-
 .lienSite {
     text-decoration: none;
     color: black;
@@ -194,6 +193,7 @@ body {
 .lienSite:hover {
     color: #e0c8ad;
 }
+
 
 /* partie footer */
 #slide4 {

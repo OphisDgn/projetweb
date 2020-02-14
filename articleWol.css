@@ -185,15 +185,10 @@ body {
     color: #e0c8ad;
 }
 
-.lienSite {
+#name {
+    color: #C79965;
     text-decoration: none;
-    color: black;
 }
-
-.lienSite:hover {
-    color: #e0c8ad;
-}
-
 
 
 
