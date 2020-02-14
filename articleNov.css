@@ -172,6 +172,14 @@ body {
     padding: 40px;
 }
 
+.effact {
+    text-decoration: none;
+    font-size: 2.2em;
+    color: #e0c8ad;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
 .effect {
     text-decoration: none;
     font-size: 2.2em;
@@ -197,9 +205,7 @@ body {
 .footer {
     display: grid; 
     background-color: rgba(50,50,50,1);
-    text-align: center;
     color: white;
-    padding-left: 10%;
 }
 
 .footer li {
@@ -220,8 +226,8 @@ body {
 .footer-information-container {
     display:grid; 
     grid-template-columns:1fr 1fr 1fr 1fr; 
-    padding-bottom:20px; 
-  
+    padding-bottom:20px;
+    padding-left: 16%;
 }
 .info-container p {
     margin-top:0px; 
@@ -237,5 +243,9 @@ body {
 }
 .liens_reseaux {
     padding: inherit;
+}
+
+.footer-developer-container {
+    text-align: center; 
 }
 
