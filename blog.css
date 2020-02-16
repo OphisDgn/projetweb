@@ -171,6 +171,10 @@ h2 {
     background-image: url('./image/wolfy_logo.png');
 }
 
+.card--3 .card__img, .card--3 .card__img--hover {
+    background-image: url('./image/openstreetmap_logo.png');
+}
+
 .card__like {
     width: 18px;
 }
